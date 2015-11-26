@@ -14,6 +14,12 @@ export APP_DOMAIN=DEFAULT
 export HUB_APIKEY=SKIP
 export SEC_ALERTS=SKIP
 export SEC_UPDATES=SKIP
+export LDAP_BASEDN=DEFAULT
+export LDAP_BINDDN="cn=nsspam,dc=example,dc=com"
+export LDAP_PASS=$MASTERPASS
+export LDAP_SERVER=127.0.0.1
+export SAMBA_BINDDN="cn=samba,dc=example,dc=com"
+export SAMBA_PASS=$MASTERPASS
 EOF
 
 chmod +x /usr/lib/inithooks/firstboot.d/30turnkey-init-fence
